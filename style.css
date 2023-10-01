@@ -1,0 +1,521 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.wrap{
+  width: 100%;
+  margin:0 auto;
+}
+
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(50,50,40,0.8);
+  padding: 25px 50px;
+  position: fixed;
+  z-index: 1;
+  top:0;
+}
+
+.header h1 a{
+    display: block;
+    width: 182px;
+    height: 36px;
+    background: url(images/logo.png) no-repeat center;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.header nav ul{
+    display: flex;
+}
+
+.menu{
+  width: 60px;
+  position:relative;
+  text-decoration: none;
+  color: white;
+  padding: 24px;
+  }
+
+.menu::after{
+  content:"";
+  display:block;
+  width: 0%;
+  height: 8px;
+  background:#00cc99;
+  position:absolute;
+  bottom:-8px;
+  right: 0;
+  transition:all, 0.3s;
+  }
+
+  .menu:hover::after{
+    width: 100%;
+    left: 0;
+  }
+
+  .menu:hover{
+    color: #00cc99;
+  }
+
+  .content{
+    width: 1024px;
+  }
+
+  .footer{
+    width: 100%;
+    margin: 0 auto;
+    background:#323228;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px;
+  }
+
+  .footer h1 a{
+    display: block;
+    background: url(images/logo.png);
+    width: 176px;
+    height: 36px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .footer p{
+    color: #9b9b9b;
+    float: right;
+    font-size: 14px;
+  }
+
+  .clearfix{
+    clear: both;
+  }
+
+  .footer ul{
+    display: flex;
+  }
+
+  .footer ul li a{
+    display: block;
+    margin-right: 20px;
+  }
+
+  .footer ul li a:hover{
+    transition: all,0.2s;
+    opacity: 80%;
+  }
+
+  .btn{
+    font-size: 16px;
+    background: #00cc99;
+    border: 0;
+    border-radius: 5px;
+    transition: all,0.2s;
+    cursor: pointer;
+   }
+   
+   .btn a{
+     color: #FFF;
+     padding:15px 30px;
+     text-decoration: none;
+     display: block;
+   }
+   
+   .btn span{
+     margin-right: 30px;
+   }
+   
+   .btn:hover{
+    border: #00bd8e;
+    background: #00bd8e;
+    box-shadow: 0px 0px 8px rgba(0, 255, 178, 1);
+   }
+
+   .content{
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  .introTitle{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 30px;
+  }
+  
+  .introTitle h3{
+    font-size: 30px;
+    color: #00cc99;
+    margin: 0px 15px 0px 40px;
+  }
+  
+  .introTitle p{
+    font-size: 16px;
+    color: #9b9b9b;
+  }
+
+  .contact{
+    background: rgb(235,235,235);
+    display: flex;
+    justify-content: center;
+    padding: 140px 0px 60px 0px;
+  }
+  
+  .contactTitle h3{
+    font-size: 24px;
+    line-height: 1.5;
+    margin-right: 100px;
+  }
+  
+.text{
+    width: 460px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .text:focus{
+    outline: 0;
+    box-shadow: inset 0px 0px 1px #00644b,0 0 5px #00a67d;
+  }
+  
+.submit{
+    border: 0px;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 40px;
+    background: #00cc99;
+    color: #FFF;
+    padding: 15px 0px 15px 40px;
+    float: right;
+    transition: all, 0.2s;
+    cursor: pointer;
+  }
+  
+  .clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+.submit:hover{
+    border: #00bd8e;
+    background: #00bd8e;
+    box-shadow: 0px 0px 8px rgba(0, 255, 178, 1);
+  }
+
+/* 以上共用 */
+
+.banner_index{
+  background: url(images/bg_index.png) no-repeat;
+  background-size: cover;
+  padding:15px 40px;
+  margin-bottom: 60px;
+}
+
+.banner_index h2{
+ color: #00cc99;
+ font-size: 42px;
+ line-height: 1.5;
+ margin-top:145px;
+ margin-bottom: 60px;
+}
+
+.banner_index span{
+ color: #FFF;
+}
+
+.banner_index .btn{
+  margin-bottom: 240px;
+}
+
+.contentTitle{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.contentTitle a{
+  text-decoration: none;
+  color: #00cc99;
+  font-size: 16px;
+  border: 2px solid #00cc99;
+  border-radius: 5px;
+  background: #FFF;
+  padding:5px 10px;
+  cursor: pointer;
+  transition: all,0.2s;
+}
+
+.contentTitle a:hover{
+  color: #FFF;
+  background: #00cc99;
+}
+
+.course-item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.course-item li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:0px 10px;
+  padding: 25px;
+  box-shadow: 0px 5px 5px #cccccc;
+} 
+
+.course-item li img{
+  margin-bottom: 20px;
+}
+
+.course-item li h4{
+  font-size: 18px; 
+  margin-bottom: 12px;
+}
+
+.course-item li p{
+  font-size: 14px;
+  color: #9b9b9b;
+  line-height: 1.5;
+}
+
+.index-table{
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 60px;
+}
+
+.index-table th{
+  font-weight: 500;
+  padding: 20px 50px; 
+  background: rgb(235,235,235);
+}
+
+.index-table td{
+  text-align: center;
+  padding: 20px 50px; 
+  border-bottom:1px solid rgb(235,235,235);
+}
+
+.index-table .highLight{
+  color: #00cc99;
+}
+
+/* 以上index.html */
+
+.banner_course{
+  background: url(images/bg_course.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding:50px 40px 70px 40px;
+  margin-bottom: 60px;
+}
+
+.banner_course .img{
+  margin-top: 80px;
+}
+
+
+.banner_course .title{
+  padding-top: 145px;
+  font-size: 42px;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+
+.banner_course .subtitle{
+  font-size: 24px;
+  color: #00cc99;
+  margin-bottom: 60px;
+}
+
+.banner_course .btn{
+  margin-bottom: 120px;
+}
+
+.content .teacher{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content .teacher h2{
+  font-size: 34px;
+  color: #00cc99;
+  line-height: 1.5;
+}
+
+.content .teacher h2 span{
+  color: #000;
+}
+
+.content .teacher li{
+  list-style: disc inside;
+  color: #9b9b9b;
+  line-height: 1.8;
+}
+
+.introduction ul{
+  margin-left: 80px;
+}
+
+.introduction li{
+  list-style: decimal outside;
+  line-height: 1.8;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.course-table th{
+  width: 1024px;
+  font-weight: 500;
+  padding: 20px 50px; 
+  background: #ebebeb;
+  text-align: left;
+}
+
+.course-table td{
+  width: 1024px;
+  padding: 20px 50px; 
+  border-bottom:1px solid rgb(235,235,235);
+}
+
+.teacher, .introduction, .course-table{
+  margin-bottom: 60px;
+}
+
+.contactCourse{
+  align-items: flex-end;
+  padding-bottom: 140px;
+}
+
+/* 以上course */
+
+.banner_FAQ{
+  background-image: url(images/bg_QA.png);
+  background-size: cover;
+  padding: 40px;
+  margin-bottom: 60px;
+}
+
+.banner_FAQ ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.banner_FAQ .title{
+  padding-top: 145px;
+  font-size: 42px;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+
+.banner_FAQ .subtitle{
+  font-size: 20px;
+  color: #00cc99;
+  margin-bottom: 50px;
+}
+
+
+.banner_FAQ .textSearch{
+  width: 560px;
+  height: 50px;
+  border: 0px;
+  border-radius: 5px 0px 0px 5px;
+  padding: 15px 20px;
+  position: relative;
+  float: left;
+}
+
+.banner_FAQ .textSearch:focus{
+  outline: 0;
+  box-shadow: inset 0px 0px 1px #00644b,0 0 5px #00a67d;
+}
+
+.banner_FAQ .btnSearch{
+  width: 60px;
+  height: 50px;
+  background: #FFF;
+  border: 0px;
+  border-radius: 0px 5px 5px 0px;
+  position: relative;
+  float: right;
+  transition: all, 0.2s;
+  cursor: pointer;
+}
+
+.banner_FAQ .btnSearch:hover{
+  background: #e5e5e5;
+  border: 0px;
+  border-radius: 0px 5px 5px 0px;
+  position: relative;
+  float: right;
+}
+
+.content .introContent{
+  padding: 0px 40px;
+  margin-bottom: 60px;
+}
+
+.content .introContent h4{
+  color: #323228;
+  line-height: 1.8;
+}
+
+.content .introContent p{
+  color: #9b9b9b;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.content .introContent p span{
+  color: #00cc99;
+}
+
+.content .introContent .ulDecimal, .content .introContent .ulDics{
+  margin-left: 40px;
+}
+
+.content .introContent .ulDecimal li{
+  list-style-type: decimal;
+  color: #9b9b9b;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.content .introContent .ulDics li{
+  list-style-type: disc;
+  color: #9b9b9b;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.contact textarea{
+  resize: none;
+  width: 460px;
+  border: 0px;
+  border-radius: 5px;
+  padding: 15px 20px 60px 15px;
+  margin-bottom: 20px;
+}
+
+.contact textarea:focus{
+  outline: 0;
+  box-shadow: inset 0px 0px 1px #00644b,0 0 5px #00a67d;
+}
